@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>DOM QUERY</title>
+	<style>
+		li{color: black;}
+		.color{color: red;}
+	</style>
+</head>
+<body>
+	<h3>First Child</h3>
+	<ul class= 'list'>
+		<li>web designing</li>
+		<li>Software designing</li>      
+		<li>Graphic designing</li>
+		<li>
+		<ul>
+			<li>DBMS</li>
+			<li>javascript</li>
+			<li>Machine learning</li>   
+		</ul>
+	</li>
+	</ul>
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			//$('ul.list').children('li:first-child').addClass('color');
+			$('ul.list').children('li').first().addClass('color');
+
+			});
+	</script>
+</body>
+</html>

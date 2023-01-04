@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Attributes in jquery</title>
+</head>
+<body>
+	<img src='img/1.jpg' width="300px" height="400px">
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			$('img').click(function(){
+				var a=$(this).attr('src');
+				alert(a);
+				$(this).attr('src','img/2.jpg');
+			})
+			
+			
+		});
+	</script>
+</body>
+</html>

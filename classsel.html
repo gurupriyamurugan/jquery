@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>class selector</title>
+</head>
+<body>
+	<h1>moneyheist</h1>
+	<i class="a">webseries</i>
+	<p class="a">learn more be smart</p>
+	
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			$(".a").click(function(){
+				var a=$(this).html();
+				console.log(a);
+			})
+			
+		});
+	</script>
+</body>
+</html>

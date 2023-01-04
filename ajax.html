@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>.ajax() in jquery</title>
+<script src="js/jquery1.js"></script>
+</head>
+<body>
+	<input type="button" id="btn" value="Click">
+	<div id="box"></div>
+<script>
+$(document).ready(function(){
+	$("#btn").click(function(){
+		$.ajax({
+		url:"get_data.php",
+		type:"post",
+		data:{name:"priya",age:24},
+		dataType:"html",
+		beforeSend:function(){
+			$("#box").text("loading");
+
+		},
+		success:function(res){
+			$("#box").html(res);
+
+		},
+		error:function(xhr,txt,error){
+
+		},
+		complete:function(xhr,txt){
+
+		}
+	});
+
+	});
+	
+});
+</script>
+</body>
+</html>

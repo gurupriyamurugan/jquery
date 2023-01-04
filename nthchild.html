@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>DOM QUERY</title>
+	<style>
+		li{color: black;}
+		.color{color: red;}
+	</style>
+</head>
+<body>
+	<h3>Nth Child with eq</h3>
+	<ul class= 'list'>
+		<li>web designing</li>
+		<li>Software designing</li>      
+		<li>Graphic designing</li>
+		<li>
+		<ul>
+			<li>DBMS</li>
+			<li>javascript</li>
+			<li>Machine learning</li>   
+		</ul>
+	</li>
+	</ul>
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			//$('ul.list').children('li:nth-child(2)').text('CADD');
+			$('ul.list').children('li').eq(1).text('change by eq');
+
+			});
+	</script>
+</body>
+</html>

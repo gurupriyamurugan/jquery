@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>DOM QUERY</title>
+	<style>
+		li{color: black;}
+	</style>
+</head>
+<body>
+	<h3>Children</h3>
+	<ul class= 'list'>
+		<li>web designing</li>
+		<li>Software designing</li>      
+		<li>Graphic designing</li>
+		<li>
+		<ul>
+			<li>DBMS</li>
+			<li>javascript</li>
+			<li>Machine learning</li>   
+		</ul>
+	</li>
+	</ul>
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			$('ul.list').children('li').css('color','red');
+						//$('ul.list').find('li').css('color','red'); //whole all ul list la find agum
+
+		});
+	</script>
+</body>
+</html>

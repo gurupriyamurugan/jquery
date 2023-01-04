@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>ODD EVEN selector</title>
+</head>
+<body>
+	<h1>Numbers</h1>
+	<table>
+		<tr>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>6</td>
+		</tr>
+	</table>
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			$("tr:odd").css('color','red');
+			$("tr:even").css('color','blue');
+		});
+	</script>
+</body>
+</html>
+

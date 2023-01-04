@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>ID selector</title>
+</head>
+<body>
+	<h1 id="a">moneyheist</h1>
+	<h1>webseries</h1>
+	<h2>learn more be smart</h2>
+	
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			$("#a").click(function(){
+				var a=$(this).html();
+				console.log(a);
+			});
+		});
+	</script>
+</body>
+</html>

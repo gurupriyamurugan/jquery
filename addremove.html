@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> ADD & Remove</title>
+<style>
+	.design{
+		color: blue;
+		font-size: 25px;
+	}
+</style>
+</head>
+<body>
+<h3 class='design'> hello</h3>
+<button id='b1'>show</button>
+<button id='b2'>hide</button>
+
+<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			// $('h3').click(function(){
+			// 	$(this).removeClass('design');
+			// });
+			$('#b1').click(function(){
+				$('h3').addClass('design');
+			});
+			$('#b2').click(function(){
+				$('h3').removeClass('design');
+			});
+					
+					});
+	</script>
+</body>
+</html>

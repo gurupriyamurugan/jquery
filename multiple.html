@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>multiple selector</title>
+</head>
+<body>
+	<h1>moneyheist</h1>
+	<i class="a">webseries</i>
+	<p id="b">learning never exhausts the mind</p>
+	
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			$(".a, #b").html("thriller series");
+			$(".a, #b").css("color",'blue');
+			
+		});
+	</script>
+</body>
+</html>

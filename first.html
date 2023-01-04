@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>first element selector</title>
+</head>
+<body>
+	<h1>html</h1>
+	<i class="a">css</i>
+	<p id="b">css is used for styling purpose</p>
+	<i class="a">js</i>
+	<i class="a">jquery</i>
+	<script src="js/jquery1.js"></script>
+	<script>
+		$("document").ready(function(){
+			$('.a:first').css('background-color','pink');
+			$('.a:last').css('background-color','orange');
+		});
+	</script>
+</body>
+</html>
+
+
